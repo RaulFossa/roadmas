@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Links</h1>
+<h2>[ RoadMas ]</h2>
+
+
 
 <table>
   <thead>
@@ -15,7 +17,8 @@
     <% @links.each do |link| %>
       <tr>
         <td><%= link.title %></td>
-        <td><%= link.url %></td>       
+        <td><%= link.url %></td> 
+        <td><%= %></td>      
         <td><%= link_to 'Show', link %></td>      
         <td><%= link_to 'Edit', edit_link_path(link) %></td>
         <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you for real?' } %></td>
